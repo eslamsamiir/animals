@@ -1,9 +1,10 @@
 const cowDiv = document.querySelector('.cow');
 const cowSound = document.querySelector('.cowsound');
+const connected = document.querySelector('.connected');
 const audioCtx = new AudioContext();
 
 window.addEventListener('online', (event) => {
-    cowSound.play();
+    connected.play();
 });
 
 cowDiv.addEventListener('click', function() {
