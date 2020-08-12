@@ -1,4 +1,5 @@
 const connected = document.querySelector('.connected');
+const name = 'Eslam';
 
 window.addEventListener('online', (event) => {
     connected.play();
