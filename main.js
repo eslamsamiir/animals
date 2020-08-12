@@ -2,6 +2,10 @@ const cowDiv = document.querySelector('.cow');
 const cowSound = document.querySelector('.cowsound');
 const audioCtx = new AudioContext();
 
+window.addEventListener('online', (event) => {
+    cowSound.play();
+});
+
 cowDiv.addEventListener('click', function() {
   if (audioCtx.state === 'suspended') {
     audioCtx.resume();
