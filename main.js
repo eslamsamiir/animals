@@ -1,5 +1,4 @@
 const connected = document.querySelector('.connected');
-const name = 'Eslam';
 
 window.addEventListener('online', (event) => {
     connected.play();
@@ -10,9 +9,9 @@ const cowSound = document.querySelector('.cowsound');
 const audioCtx = new AudioContext();
 
 cowDiv.addEventListener('click', function() {
-  if (audioCtx.state === 'suspended') {
+  /*if (audioCtx.state === 'suspended') {
     audioCtx.resume();
-  }
+  }*/
   
   cowSound.play();
 });
